@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student Admission Form</h1>
+    <!--form is important to make form because it is give some external features-->
+    <br><br>
+    <Label>Student Name</Label>
+    <input type="text" minlength="8">
+    <!-- placeholder use for show enter your Name -->
+
+    <br> <br>
+
+    <Label>Student Email</Label>
+    <input placeholder=" enter your email" type="text" minlength="15" required>
+
+    <br><br>
+
+    <label> Date of birth</label>
+    <input type="date">
+
+    <br>
+
+    <label for=" Upload image"> click here to upload image</label>
+    <input type="file" id="upload-image" hidden>
+
+    <br><br>
+
+    <Label>Address</Label>
+    <textarea rows="5" cols="30"></textarea>
+
+    <br><br>
+
+    <label> Choose gender</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <br><br>
+    <!--gender do baar iss liye likha hai qki donoko ek samjhega toek hi choose kar sakte hai-->
+    <label> Select Course</label>
+    <select>
+        <option>mern stack</option>
+        <option>data science</option>
+        <option>ai</option>
+        <option>ml</option>
+        <option>cloud</option>
+
+        <!-- jada option ke liye select use karte hai -->
+    </select>
+
+    <br><br>
+    <label>College name</label>
+    <input type="text" list="College">
+
+    <datalist id="College">
+        <option>bssitm</option>
+        <option>bbd</option>
+        <option>ff</option>
+        <option>shmit</option>
+        <!-- datalist se option bhi aayega orr other me type kr ke bhi likh sakte hai-- -->
+    </datalist>
+    <br><br>
+
+    <input type="checkbox">
+    <label>I accept Terms and conditions</label>
+    <br><br>
+    <details><!--kuch cheezo ko hide karke rakhta hai-->
+        <summary>View terms and conditions</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sapiente.</p>
+    </details>
+    <br><br>
+
+
+
+
+
+    <br><br>
+
+    <button type="Submit"> Submit</button>
+
+
+
+
+    </form>
+
+</body>
+
+</html>
