@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 30px;
+            text-decoration: underline;
+            font-weight: bold;
+            color: blue;
+
+        }
+        .myclass{
+            background-color: crimson;
+            color: white;    
+        }
+        
+        #myid{  
+            color: green;
+            text-align: center;
+            font-size: 60px;
+        }
+        h6{
+            font-size: 40px;
+            color: blue !important;
+        }
+        .heading{
+            color: red;
+        }
+        #myid2{
+            color: green;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: red; font-size: 50px; ">Inline css is used to style individual element only</h1>
+    <p>inyernal css is use to multiple tags at once</p>
+    <p class="myclass">Name selectors are used to select elemnt byn their tag name</p>
+    <h2 class="myclass">class selectoes are used to select element by their ckass name</h2><!--agr myclass ke bich me gap diya to use do samjhega-->
+    <!-- class ki priority jada hoti hai as compare to style -->
+     <h3 id="myid">Id Selectors are used to select element by their id name</h3><!--myclass me . or id mw # lgana jruri hai nhi to nhi hoga-->
+
+     <h6 class="heading" id="myid2" style="color: violet;">Priority of selectors:ID > Class> Name </h6>  <!--sabse jada priority Inline css ki hoti hai then internal css me ID ki hoti fir class fir name or sabse jada inline ki priority hoti hai-->
+     <!-- or agr !important lga de ye sabse badi priority ban jati hai voo sbko hta ke ye lag jata hai-->
+      <button class="btn">Submit Here</button>
+      <button class="btn" id="nice">34</button><!--important hai phone me hai-->
+
+</body>
+</html>
