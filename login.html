@@ -5,24 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
+
+
     <style>
+        *{
+            font-family: Roboto;
+        }
         .card{
-            border: 2px solid red;
-            width:20%;
+            border: 2px solid #ccc;
+            width: 20%;
             border-radius: 10px;
             padding: 30px;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.491);  
+            background-color: white;
+            
 
         }
         body{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content:center;
+            align-items:center;
             height: 100vh;
+            box-sizing: border-box;
+            /* background-color: skyblue; */
+            background-image: url('https://th.bing.com/th/id/R.7186899ff5646e88570861283a5b9529?rik=e8hozSCF2dCmOw&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0047%2f9730%2f0847%2farticles%2f10-Best-Indoor-Plants-Gear-Patrol-lead-full_1-122600.jpg%3fv%3d1679748676&ehk=%2fEXxPrElKquukWqssNwNjGjP1ngmrHn18lTQqP5SzJg%3d&risl=&pid=ImgRaw&r=0');
+
+        }
+        .form-title{
+            text-align: center;
+            font-family: Roboto;
+            font-size: 30px;
+        }
+        .text-input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            border: 1px solid blueviolet;
+        }
+        .btn{
+            display: block;
+            background-color: blueviolet;
+            color:white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .link{
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: blueviolet;
+            font-size: 15px;
+
+        }
+        .link:hover{
+            color: #3d1364;
+            text-decoration: underline;
         }
 
     </style>
 </head>
-<body>
+<body >
     <div class="card">
         <h3 class="form-title">Login Form</h3>
         <form >
@@ -32,11 +81,20 @@
             <label >Password</label>
             <input type="password" class="text-input">
 
-            <button>Submit</button>
+            <a href="#" class="link">Forget Password</a>
+
+            <button class="btn">Submit</button>
 
 
-        </form><!--vh is vertical height-->
-
+        </form><!--vh is vertical height flex centre pe lane ke liye use hota hai div ke parent tag pe lagta hai-->
+        <!--box shadow ka x offset ,y offset ,blur,sixe.color same multiple times bhi lga sakte hai -->
+        <!-- we use use fonts and google fonts to add fonts on your page -->
+         <!-- * means sb pe lagega -->
+          <!-- block ki jgh inline bhi likh sakte hai  -->
+           <!-- box sizing se width height equal rahegi -->
+            <!-- width se pure me aa ayega -->
+            <!-- margin means dono me antar -->
+             <!-- hover means ek bar password galat to apply hoga -->
     </div>
 </body>
 </html>
