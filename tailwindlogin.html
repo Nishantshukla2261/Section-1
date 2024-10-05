@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-blue-300"><!--align items ki jgh items use karte hai or justify-content ki jagah sirf justify-crnter kaam karta hai
+    height vh ki jagah h-screen  -->
+    <div class="border border-gray-300 w-1/5 rounded-lg shadow-xl bg-white p-8 "> <!--boder degault 1 leta hai 2 means 2pixel ka border 500 hi important hai iss plus hota h 600 700 900 950 maximum
+        border radius ke liye rounded use karte hai jo bhi css me lga sakte hai sb isse kar sakte hai w-[] iske andrlg means large 
+        p for padding-->
+        <h3 class="text-center font-bold text-2xl my-5">Login Form</h3><!--m for margin sb ke liye aise hi sirf y axis ke liye y or x ke liye x
+         -->
+        <form >
+            <label >Email Address</label>
+            <input type="email" class="border border-violet-200 w-full rounded p-2 mb-5"><!--mb means margin border-->
+
+            <label >Password</label>
+            <input type="password" class="border border-violet-200 w-full rounded p-2 mb-5"><!--500means shadow-->
+
+            <a href="#" class="text-violet-500 font-bold hover:underline hover:text-violet-800 ">Forget Password</a> <!--jinti properties hover pe likjni ho hr bar hover likhna padega-->
+
+            <button class="block bg-violet-500 text-white w-full p-2 rounded mt-4">Submit</button>
+            <!-- control k shorcut hai search krne se tailwind website pe  -->
+
+
+        </form>
+    </div>
+</body>
+</html>
