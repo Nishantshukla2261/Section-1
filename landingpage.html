@@ -1,29 +1,60 @@
 <!doctype html>
 <html>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script> <!--ye line main haim ha-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script> <!--ye line main haim ha-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
 
     </header>
     <main>
         <article>
-            <section class="border-2 border-red-500 h-[60vh]"><!-- ye symentic tag hai or responsive bnane ke liye grid use karte hai gap-5 forgap between 2 boxes-->
-                <div class="grid grid-cols-2 border-2 barder-green-500 w-[80%] mx-auto h-full">
-                    <div class="border-2 border-blue-500 my-auto">
-                        <h1 class="text-6xl font-bold">Hero Section Title</h1>
-                        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, maiores! Explicabo adipisci laboriosam dicta cum? Reiciendis qui voluptates mollitia fuga.</p>
+            <section class=" min-h-[60vh] ">
+                <!-- ye symentic tag hai or responsive bnane ke liye grid use karte hai gap-5 forgap between 2 boxes md:bg-yellow-500 means 780px ke niche ki window pe nhi lagega -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-[80%] mx-auto h-full">
+                    <div class=" my-auto space-y-5 order-last lg:order-first text-center lg:text-left">
+                        <h1 class="text-3xl lg:text-6xl font-bold">Hero Section Title</h1>
+                        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, maiores!
+                            Explicabo adipisci laboriosam dicta cum? Reiciendis qui voluptates mollitia fuga.</p>
+                        <div class="flex gap-4 justify-center lg:justify-start">
+                            <button
+                                class="py-1.5 px-3 rounded border-2 border-blue-500 bg-blue-500 hover:bg-blue-700 text-white ">Explore</button>
+                            <button class="py-1.5 px-3 rounded border-2 border-blue-500 text-blue-500 ">Get
+                                Started</button><!--block use kr ke liche la sakte hai-->
+                        </div>
 
                     </div>
-                    <div class="border-2 border-violet-500">
-                        <h1>Image</h1>
+                    <div class=" my-auto">
+                        <img class="block mx-auto w-full"
+                            src="https://th.bing.com/th/id/OIP.uXo6EKwTvorCIfWITs5zzgHaHa?rs=1&pid=ImgDetMain" alt="">
 
                     </div>
                 </div>
 
+            </section>
+
+            <section class="bg-yellow-200 py-6">
+                <h2 class="text-center text-3xl font-bold my-6">Product Cards</h2>
+                <div class="grid grid-cols-4 border-2 border-red-500 w-[80%] mx-auto">
+                    <div class="border-2 border-blue-500 shadow">
+                        <img src="https://th.bing.com/th/id/OIP.TaNVdPuQzgrpSS-hh9v8WAAAAA?rs=1&pid=ImgDetMain" alt="">
+
+                        <div class="p-4 ">
+                            <p>Adidas</p>
+                            <h2 class="text-2xl font-bold"> Sport Shoes</h2>
+                            <button class=" mt-5 bg-violet-500 text-white px-3 py-1.5 rounded"><i
+                                    class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</button><!--&nbsb space dene ke liye-->
+
+                        </div>
+
+                    </div>
+                </div>
             </section>
         </article>
 
@@ -31,7 +62,8 @@
     <footer>
 
     </footer>
-  
+
 
 </body>
+
 </html>
