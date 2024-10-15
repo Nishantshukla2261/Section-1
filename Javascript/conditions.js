@@ -38,4 +38,20 @@ console.log(abc);
 // /let or const (constant) ka use karne hai hm var ka use itna nhi karte orr by default ye global variable hi hote hai
 //  node --watch conditions
 
+//  wap to check if a no. is positive negative or zero
+
+num=14;
+if(num>0){
+    console.log('positive');
+    
+}
+else if(num<0){
+    console.log('negative');
+    
+} else{
+    console.log('zero');
+    
+}
+
+
 

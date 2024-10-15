@@ -22,7 +22,7 @@ console.log('1'==1);
 console.log('1'===1);
 console.log('2'===1);
 console.log('2'==2);
-// === mainly lgate hai yhi use karna chahiye
+// === mainly lgate hai yhi use karna chahiye teesra type check karta hai
 
 
 
