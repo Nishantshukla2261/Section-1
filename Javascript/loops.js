@@ -72,3 +72,34 @@ if (Number.isInteger(root)) {
 } else {
     console.log('Not a perfect square');
 }
+
+// wap to print fabonacci series
+let a=0;
+ b=1;
+ n=10;
+console.log('Fibonacci Series');
+for(let i=1;i<=n;i++){
+    console.log(a);
+    let next=a+b;
+    a=b;
+    b=next;
+    
+    
+}
+// wap to reverse a number
+let number=57439;
+let reverse=0;
+while(number>0){
+    console.log(number,reverse);
+
+    let d = n%10;
+    reverse=reverse*10+d;
+    number = parseInt(number/10);
+    
+}
+console.log(reverse);
+
+
+
+
+
